@@ -2,6 +2,19 @@
  * 编译markdown为html
  * @return {[type]} [description]
  */
+var _ = require("./bower_components/underscore-min/underscore-min.js")
+var katex = require("./bower_components/katex-build/katex.min.js")
+var marked = require("./bower_components/marked-min/marked.min.js")
+
+require("./bower_components/jquery-ui-min/jquery-ui.min.js")
+require("./bower_components/jquery-ui-layout-min/jquery.layout.min.js")
+require("./bower_components/jquery.cookie-min/jquery.cookie.js")
+require("./bower_components/ace-min-noconflict/ace.js")
+require("./bower_components/ace-min-noconflict/ext-static_highlight.js")
+require("./bower_components/ace-min-noconflict/ext-modelist.js")
+require("./bower_components/ace-min-noconflict/keybinding-vim.js")
+require("./bower_components/remodal-min/jquery.remodal.min.js")
+require("./bower_components/mermaid-min/mermaid.full.min.js")
 
 $.extend({
 	markdowToHtml: compileMarkdown

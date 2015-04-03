@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="bower_components/jquery-ui-layout-min/layout-default.css"/>
+    <link rel="stylesheet" href="bower_components/github-markdown-css/github-markdown.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome-min/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="bower_components/remodal-min/jquery.remodal.css"/>
+    <link rel="stylesheet" href="bower_components/katex-build/katex.min.css"/>
+    <link rel="stylesheet" href="bower_components/ionicons-min/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="bower_components/mermaid-min/mermaid.css"/>
+    <link rel="stylesheet" href="markdown.css"/>
+
+    <script src="bower_components/jquery-dist/jquery.min.js"></script>
+
+    <script src="./dest/bundle.js"></script>
+</head>
+<body class="markdown-body"></body>
+<script>
+    $.markdowToHtml('example.md', 'body');
+</script>
+</html>
